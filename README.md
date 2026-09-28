@@ -43,7 +43,7 @@ Final model (all layers, logistic regression), out-of-fold predictions for every
 
 ### Key Findings
 - **Expression carries almost all of the signal.** Adding methylation, mutation and receptor status to RNA-seq did not improve on RNA alone; the differences are within one SD. That's expected, because PAM50 is defined from expression.
-- **Methylation alone recovers the subtype reasonably well** (79% accuracy, balanced 0.69) without any expression data, so methylation patterns track the subtypes independently.
+- **Methylation alone recovers the subtype reasonably well** (79% accuracy, balanced 0.69) so methylation carries subtype information on its own, without any expression data.
 - **Mutations and receptor status alone are weak** (balanced accuracy ~0.4) and add nothing on top of methylation.
 - **Logistic regression beats XGBoost and random forest in every combination.** With ~390 training patients and ~110 PCA features, the simpler linear model generalises better.
 - **Basal is the most separable subtype; Normal-like is the hardest** (15 patients, recall 0.33). LumA vs LumB confusion is expected because they sit on a proliferation continuum.
