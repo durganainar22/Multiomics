@@ -1,0 +1,11 @@
+              precision    recall  f1-score   support
+
+       Basal      0.962     0.962     0.962        78
+        Her2      0.852     0.767     0.807        30
+        LumA      0.878     0.928     0.902       249
+        LumB      0.814     0.786     0.800       117
+      Normal      0.625     0.333     0.435        15
+
+    accuracy                          0.871       489
+   macro avg      0.826     0.755     0.781       489
+weighted avg      0.867     0.871     0.867       489
